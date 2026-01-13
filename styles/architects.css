@@ -26,6 +26,10 @@
   color: #424242;
 }
 
+.text-primary{
+    color: #ff900e;
+}
+
 /* Dark 3 */
 .text-light-gray {
   color: #727272;
@@ -43,6 +47,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #ffffff;
+}
+
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 /* header styles */
@@ -119,10 +129,6 @@ main > section {
   max-width: 537px;
 }
 
-.feature-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
 
 #quick-list {
   font-weight: 500;
@@ -132,13 +138,33 @@ main > section {
 
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-link {
+  .nav-link,
+  .teams
+  {
     flex-direction: column;
   }
 
-  /* .navbar,
-.banner {
-  width: 100%;
-  margin: 0 auto;
-} */
+  .team-img-container{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+
+  .our-features{
+    margin-left: 20px;
+  }
+
+  
+}
+
+
+/* Medium Size Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+
+    .our-features{
+        margin-left:50px auto;
+    }
 }
