@@ -168,6 +168,24 @@ font-weight: 600;
   
 }
 
+.featured-architect{
+  width: 100%;
+}
+
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -100px;
+}
+
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+
+}
+
 /* Some facts related style */
 
 .facts-container {
@@ -220,49 +238,59 @@ font-weight: 600;
 
 /* Responsive Media Query */
 
+/* responsive media query */
 @media screen and (max-width: 576px) {
-  .navbar,
-  .nav-link,
-  .teams {
-    flex-direction: column;
-  }
+    .navbar, 
+    .nav-links, 
+    .features,
+    .teams{
+        flex-direction: column;
+    }
 
-  .team-img-container,
-  .facts-container,
-  .sponsor-companies {
-    grid-template-columns: repeat(1, 1fr);
-  }
+    .team-img-container, 
+    .facts-container, 
+    .sponsor-companies
+    {
+        grid-template-columns: 1fr;
+    }
 
-  .facts-container {
-    justify-items: center;
-    gap: 24px;
-  }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
 
-  .sponsor-companies {
-    justify-items: center;
-    gap: 50px;
-  }
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px;
+    }
 
-  .our-features {
-    margin-left: 20px;
-  }
+    .our-features{
+        margin-left: 20px;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
-/* Medium Size Device */
-
+/* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
-    flex-direction: column;
-  }
+    .teams, .features{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
 
-  .our-features {
-    margin-left: 50px auto;
-  }
+    .sponsor-companies, .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
 
-  .sponsor-companies,
-  .facts-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    justify-items: center;
-  }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
