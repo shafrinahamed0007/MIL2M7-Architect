@@ -70,14 +70,14 @@
 
 .navbar,
 .banner {
-  max-width: 1340px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Banner related styles */
 
 .banner-content {
-  width: 850px;
+  max-width: 862px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
@@ -86,17 +86,59 @@
 .banner-title {
   font-weight: 700;
   font-size: 4rem;
+  width: 100%;
 }
 
 .banner-image {
   width: 100%;
 }
 
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main > section {
+  margin-top: 130px;
+}
+
+/* team and features related styles */
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 73px;
+  max-width: 537px;
+}
+
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+#quick-list {
+  font-weight: 500;
+}
 
 /* Responsive Media Query */
 
-@media screen and (max-width:576px){
-    .navbar, .nav-link{
-        flex-direction: column;
-    }
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link {
+    flex-direction: column;
+  }
+
+  /* .navbar,
+.banner {
+  width: 100%;
+  margin: 0 auto;
+} */
 }
