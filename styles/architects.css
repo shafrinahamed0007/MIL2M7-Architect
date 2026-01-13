@@ -175,12 +175,18 @@ main > section {
     flex-direction: column;
   }
 
-  .team-img-container {
+  .team-img-container, .facts-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
   }
 
   .our-features {
     margin-left: 20px;
+    
   }
 }
 
